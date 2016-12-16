@@ -7,7 +7,7 @@ RSpec::Core::RakeTask.new(:spec)
 
 task :default => :spec
 
-
+desc 'Update to the newest MaxMindDB (geolite city)'
 task :update_db do
   cli = HighLine.new
   if is_same_db?
