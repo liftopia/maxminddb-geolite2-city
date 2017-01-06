@@ -115,5 +115,7 @@ def commit_and_push(version)
 end
 
 def release_to_rubygems
-  Rake::Task['release'].invoke
+  # We need to reload the VERSION constant before releasing
+  # Rake::Task['release'].invoke
+  `bundle exec rake release` # tmp fix
 end
