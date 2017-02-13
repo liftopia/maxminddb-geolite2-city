@@ -1,5 +1,5 @@
 [![Build
-Status](https://travis-ci.org/Phybbit/schema-inference.svg?branch=master)](https://travis-ci.org/Phybbit/schema-inference)
+Status](https://travis-ci.org/Phybbit/maxminddb-geolite2-city.svg?branch=master)](https://travis-ci.org/Phybbit/maxminddb-geolite2-city)
 
 # Maxminddb::Geolite2::City
 
