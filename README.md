@@ -1,3 +1,6 @@
+[![Build
+Status](https://travis-ci.org/Phybbit/schema-inference.svg?branch=master)](https://travis-ci.org/Phybbit/schema-inference)
+
 # Maxminddb::Geolite2::City
 
 This gem bundles the GeoLite2-City.mmdb database along with the [MaxMinDB gem](https://github.com/yhirose/maxminddb).
