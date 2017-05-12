@@ -2,6 +2,9 @@
 
 This project uses [Semantic Versioning 2.0.0](http://semver.org/).
 
+#### Release 1.6.0
+- Bundled the May 2017 geolite2-city db
+
 #### Release 1.5.0
 - Bundled the April 2017 geolite2-city db
 
