@@ -27,8 +27,12 @@ Or install it yourself as:
 ```ruby
 require 'maxminddb/geolite2/city'
 
-MaxMindDB.default_city_db.lookup('8.8.8.8').city.name
-# => "Mountain View"
+MaxMindDB.default_city_db.lookup('74.125.224.72').city.name
+# => "Alameda"
+
+# or, to use the LOW_MEMORY_FILE_READER
+MaxMindDB.default_city_db(MaxMindDB::LOW_MEMORY_FILE_READER).lookup('74.125.224.72').city.name
+# => "Alameda"
 ```
 
 ## Development

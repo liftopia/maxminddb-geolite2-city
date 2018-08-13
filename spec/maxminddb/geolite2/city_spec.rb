@@ -12,6 +12,6 @@ describe MaxMindDB::Geolite2::City do
   end
 
   it "supports city lookup" do
-    expect(default_db.lookup('8.8.8.8').city.name).to eq("Mountain View")
+    expect(default_db.lookup('74.125.224.72').city.name).to eq("Alameda")
   end
 end
