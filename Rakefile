@@ -39,7 +39,7 @@ task :update_db do
 end
 
 def is_same_db?
-  checksum = `md5sum -b ./lib/maxminddb/geolite2/db/GeoLite2-City.mmdb`.split(' ')[0]
+  checksum = `md5 ./lib/maxminddb/geolite2/db/GeoLite2-City.mmdb`.split(' ').last
   fetch_db_md5_checksum == checksum
 end
 
@@ -55,7 +55,7 @@ def download_db
 end
 
 def db_checksum_valid?(db_path)
-  checksum = `md5sum -b #{db_path}`.split(' ')[0]
+  checksum = `md5 #{db_path}`.split(' ').last
   fetch_db_md5_checksum == checksum
 end
 
